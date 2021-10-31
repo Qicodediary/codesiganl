@@ -1,0 +1,12 @@
+def allLongestStrings(inputArray):
+    len_para=[]
+    l_array=[]
+    for i in range(len(inputArray)):
+        len_para.append(len(inputArray[i]))
+    for i in range(len(inputArray)):
+        if max(len_para)==len_para[i]:
+            l_array.append(inputArray[i])
+    return l_array
+    
+        
+        
