@@ -1,0 +1,6 @@
+def sortByHeight(a):
+    A=sorted([x for x in a if x>-1])
+    for count, value in enumerate(a):
+        if a[count]==-1:
+            A.insert(count,-1)
+    return A
