@@ -1,0 +1,7 @@
+def makeArrayConsecutive2(statues):
+    s1=min(statues)
+    sn=max(statues)
+    snew=list(range(s1, sn+1))
+    for i in range(0,len(statues)):
+        snew.remove(statues[i])
+    return len(snew)
