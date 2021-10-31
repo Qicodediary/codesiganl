@@ -1,0 +1,11 @@
+def commonCharacterCount(s1, s2):
+    l1=list(s1)
+    l2=list(s2)
+    cnt=0
+    for i in l1:
+        for j in l2:
+            if i==j:
+                cnt+=1
+                l2.remove(j)#remove first matching value
+                break
+    return cnt
