@@ -1,0 +1,10 @@
+def alternatingSums(a):
+    list1=[]
+    list2=[]
+    for i in range(len(a)):
+        if i%2==0:
+            list1.append(a[i])
+        else:
+            list2.append(a[i])
+    return sum(list1), sum(list2)
+
