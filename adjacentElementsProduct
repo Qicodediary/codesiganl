@@ -1,0 +1,7 @@
+import numpy as np
+def adjacentElementsProduct(inputArray):
+    a=len(inputArray)
+    prod=np.full(a-1, np.nan)
+    for i in range(0,a-1):
+        prod[i]=inputArray[i]*inputArray[i+1]
+    return max(prod)
