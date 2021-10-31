@@ -1,0 +1,16 @@
+def check_increasing(sqe):
+    for i in range(len(sqe)-1):
+        if sqe[i]>=sqe[i+1]:
+            return i
+    return -1
+
+def almostIncreasingSequence(sequence):
+    check=check_increasing(sequence)
+    if check == -1:
+        return True
+    else:
+        if check_increasing(sequence[0:check]+sequence[check+1:]) ==-1: 
+            return True
+        elif check_increasing(sequence[0:check+1]+sequence[check+2:]) ==-1: 
+            return True
+    return False
