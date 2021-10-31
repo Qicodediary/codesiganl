@@ -1,0 +1,19 @@
+def areSimilar(a, b):
+    if a==b:
+        return True 
+    else:
+        if sorted(a)!=sorted(b):
+            return False
+        else:
+            r=[]
+            for i in range(len(a)):
+                if a[i]!=b[i]:
+                    r.append([a[i],b[i]])
+            if r[0][:]==r[1][::-1] and len(r)<3:
+                return True
+            else: 
+                return False
+                    
+                    
+                 
+    
