@@ -1,0 +1,6 @@
+def reverseInParentheses(inputString):
+    while '(' in inputString:
+        st=inputString.rindex('(')
+        en=inputString.index(')',st)
+        inputString=inputString[0:st]+inputString[st+1:en][::-1]+inputString[en+1::]
+    return inputString
